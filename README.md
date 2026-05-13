@@ -8,6 +8,7 @@ The application takes user input such as dietary preferences, restrictions, budg
 - A weekly meal plan
 - A grocery list based on selected meals
 - A simple calendar-style visualization of the plan
+- An AI agent workflow powered by OpenRouter
 
 ---
 
@@ -46,6 +47,45 @@ The system follows an agent-based design with modular components:
 - **Frontend**  
   A simple interface displays the meal plan and grocery list.
 
+## API Endpoints
+
+The application exposes two main POST endpoints:
+
+- `POST /plan`
+  - Generates a meal plan and grocery list for a given set of filters using the AI agent and tool-calling workflow.
+  - Request body JSON example:
+    ```json
+    {
+      "tags": ["vegetarian", "quick"],
+      "dietaryRestrictions": ["gluten-free"],
+      "excludeIngredients": ["peanuts", "dairy"],
+      "mealType": ["breakfast", "lunch"],
+      "maxBudget": 12,
+      "days": 3
+    }
+    ```
+  - `days` must be an integer between `1` and `7`.
+  - `maxBudget` must be a positive number if provided.
+
+- `POST /plan/replace`
+  - Replaces a single recipe in the existing plan when the user requests a substitute.
+  - Request body JSON example:
+    ```json
+    {
+      "tags": ["vegetarian"],
+      "overrideTags": ["egg"],
+      "mealType": "breakfast",
+      "excludeRecipeIds": ["r11"]
+    }
+    ```
+
+## Project structure
+
+- `public/` — static frontend assets and client logic
+- `src/` — server, agent, skills, and recipe modules
+- `data/recipes.json` — local recipe dataset used by the planner
+- `test/` — simple unit test suite
+
 ## How it works
 
 1. The user provides preferences and constraints.
@@ -72,7 +112,31 @@ The system follows an agent-based design with modular components:
   Logic is decomposed into modular components that can be reused and combined.
 
 
-## Project scope
+## How to run
+
+1. Install dependencies:
+   - `npm install`
+2. Set your OpenRouter API key:
+   - `export OPENROUTER_API_KEY=your_key` on macOS/Linux
+   - `setx OPENROUTER_API_KEY "your_key"` on Windows
+3. Optionally set the OpenRouter base URL and model (defaults are provided):
+   - `export OPENAI_BASE_URL=https://openrouter.ai/api/v1` on macOS/Linux
+   - `setx OPENAI_BASE_URL "https://openrouter.ai/api/v1"` on Windows
+   - `export OPENAI_MODEL=openai/gpt-4o-mini` on macOS/Linux
+   - `setx OPENAI_MODEL "openai/gpt-4o-mini"` on Windows
+
+> This project uses the OpenRouter API (`https://openrouter.ai/api/v1`) for the AI agent backend instead of the OpenAI hosted endpoint.
+4. Start the server:
+   - `npm start`
+5. Open `http://localhost:3000` in your browser.
+
+## Testing
+
+- Run the built-in test suite:
+  - `npm test`
+- This validates recipe search, filtering, weekly plan creation, grocery aggregation, and edge cases such as exact ingredient matching.
+
+## Notes
 
 The current version focuses on a local recipe dataset and an in-app weekly meal planner. External recipe scraping or calendar integration is intentionally excluded to keep the MVP small, reliable, and easy to test.
 

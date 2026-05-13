@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Meal Planner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <nav class="page-nav">
+      <a href="#meal-form" class="page-nav-link">Filters</a>
+      <a href="#meal-result-section" class="page-nav-link">Meal plan</a>
+      <a href="#grocery-list-section" class="page-nav-link">Grocery list</a>
+    </nav>
+    <header>
+      <div class="hero">
+        <div>
+          <p class="eyebrow">Meal planning made easy</p>
+          <h1>Generate a weekly menu in seconds</h1>
+          <p class="hero-copy">Tell the planner your preferences and receive a custom meal plan plus a grocery list. Leave everything blank for a flexible default plan.</p>
+        </div>
+        <div class="hero-panel">
+          <strong>Tip</strong>
+          <p>Use tags like <span>vegetarian</span>, <span>quick</span>, or <span>mediterranean</span> to refine your meals.</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="form-section">
+      <form id="meal-form" class="planner-form" novalidate>
+        <div class="field-grid">
+          <label>
+            Preferred food types or tags
+            <input id="tags" type="text" placeholder="e.g. vegetarian, mexican, quick" />
+          </label>
+          <label>
+            Dietary restrictions
+            <input id="dietary" type="text" placeholder="e.g. vegan, gluten-free" />
+          </label>
+          <label>
+            Ingredients to exclude
+            <input id="exclude" type="text" placeholder="e.g. peanuts, dairy" />
+          </label>
+          <div class="meal-type-group">
+            <span>Meal type preference</span>
+            <div class="meal-type-options">
+              <label><input name="meal-type" type="checkbox" value="breakfast" /> Breakfast</label>
+              <label><input name="meal-type" type="checkbox" value="lunch" /> Lunch</label>
+              <label><input name="meal-type" type="checkbox" value="dinner" /> Dinner</label>
+            </div>
+          </div>
+          <label>
+            Maximum budget per meal
+            <input id="budget" type="number" min="0" placeholder="e.g. 12" />
+          </label>
+          <label>
+            Number of days
+            <input id="days" type="number" min="1" max="7" placeholder="1-7" required />
+          </label>
+        </div>
+
+        <div class="global-criteria-note">
+          <p>Global filters apply to the whole plan. After creating the plan, you can customize a specific breakfast, lunch, or dinner directly from each recipe card.</p>
+        </div>
+        <div class="actions">
+          <button type="submit" id="submit-button">Generate meal plan</button>
+          <button type="button" id="clear-filters-button" class="clear-filters-button">Clear filters</button>
+          <div id="loading" class="loading hidden">Loading your meal plan…</div>
+        </div>
+      </form>
+      <section id="error-message" class="error hidden"></section>
+    </section>
+
+    <section id="meal-result-section" class="result-section hidden">
+      <div class="result-column">
+        <h2>Weekly meal plan</h2>
+        <div id="meal-plan" class="meal-plan"></div>
+      </div>
+      <div id="grocery-list-section" class="result-column">
+        <h2>Grocery list</h2>
+        <div class="grocery-nav" id="grocery-nav"></div>
+        <div id="grocery-list" class="grocery-list"></div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

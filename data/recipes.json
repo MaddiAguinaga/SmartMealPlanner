@@ -1,0 +1,683 @@
+[
+  {
+    "id": "r1",
+    "name": "Vegetable Stir Fry",
+    "tags": ["vegetarian", "quick", "asian", "low-cost"],
+    "ingredients": [
+      {"name": "broccoli", "category": "vegetables"},
+      {"name": "carrot", "category": "vegetables"},
+      {"name": "bell pepper", "category": "vegetables"},
+      {"name": "soy sauce", "category": "condiments"},
+      {"name": "garlic", "category": "spices"}
+    ],
+    "dietary": ["vegetarian"],
+    "estimatedCost": 8,
+    "mealType": "dinner",
+    "description": "A quick stir fry with fresh vegetables and savory sauce."
+  },
+  {
+    "id": "r2",
+    "name": "Chicken Tacos",
+    "tags": ["mexican", "protein", "gluten-free"],
+    "ingredients": [
+      {"name": "chicken", "category": "protein"},
+      {"name": "corn tortillas", "category": "carbs"},
+      {"name": "lettuce", "category": "vegetables"},
+      {"name": "tomato", "category": "vegetables"},
+      {"name": "cheese", "category": "dairy"}
+    ],
+    "dietary": ["gluten-free"],
+    "estimatedCost": 12,
+    "mealType": "dinner",
+    "description": "Flavorful tacos with shredded chicken and fresh toppings."
+  },
+  {
+    "id": "r3",
+    "name": "Quinoa Salad",
+    "tags": ["vegan", "gluten-free", "healthy", "vegetarian"],
+    "ingredients": [
+      {"name": "quinoa", "category": "grains"},
+      {"name": "cucumber", "category": "vegetables"},
+      {"name": "cherry tomatoes", "category": "vegetables"},
+      {"name": "olive oil", "category": "oils"},
+      {"name": "lemon", "category": "fruits"}
+    ],
+    "dietary": ["vegan", "gluten-free", "vegetarian"],
+    "estimatedCost": 10,
+    "mealType": "lunch",
+    "description": "A light and refreshing salad with quinoa and fresh vegetables."
+  },
+  {
+    "id": "r4",
+    "name": "Pasta Primavera",
+    "tags": ["vegetarian", "italian", "comfort", "quick"],
+    "ingredients": [
+      {"name": "pasta", "category": "carbs"},
+      {"name": "zucchini", "category": "vegetables"},
+      {"name": "tomato", "category": "vegetables"},
+      {"name": "parmesan", "category": "dairy"},
+      {"name": "basil", "category": "herbs"}
+    ],
+    "dietary": ["vegetarian"],
+    "estimatedCost": 11,
+    "mealType": "dinner",
+    "description": "Pasta with fresh vegetables in a light tomato sauce."
+  },
+  {
+    "id": "r5",
+    "name": "Oatmeal with Fruit",
+    "tags": ["vegan", "breakfast", "budget", "vegetarian"],
+    "ingredients": [
+      {"name": "oats", "category": "grains"},
+      {"name": "almond milk", "category": "dairy"},
+      {"name": "banana", "category": "fruits"},
+      {"name": "berries", "category": "fruits"},
+      {"name": "honey", "category": "condiments"}
+    ],
+    "dietary": ["vegan", "vegetarian"],
+    "estimatedCost": 5,
+    "mealType": "breakfast",
+    "description": "A nutritious breakfast bowl with oats and fresh fruit."
+  },
+  {
+    "id": "r6",
+    "name": "Pancakes with Maple Syrup",
+    "tags": ["vegetarian", "breakfast", "budget"],
+    "ingredients": [
+      {"name": "flour", "category": "carbs"},
+      {"name": "almond milk", "category": "dairy"},
+      {"name": "baking powder", "category": "spices"},
+      {"name": "maple syrup", "category": "condiments"},
+      {"name": "banana", "category": "fruits"}
+    ],
+    "dietary": ["vegetarian"],
+    "estimatedCost": 5,
+    "mealType": "breakfast",
+    "description": "Fluffy pancakes served with sweet maple syrup and fresh banana slices."
+  },
+  {
+    "id": "r7",
+    "name": "Mediterranean Chickpea Salad",
+    "tags": ["vegan", "gluten-free", "lunch"],
+    "ingredients": [
+      {"name": "chickpeas", "category": "legumes"},
+      {"name": "cucumber", "category": "vegetables"},
+      {"name": "tomato", "category": "vegetables"},
+      {"name": "red onion", "category": "vegetables"},
+      {"name": "parsley", "category": "herbs"},
+      {"name": "olive oil", "category": "oils"},
+      {"name": "lemon", "category": "fruits"}
+    ],
+    "dietary": ["vegan", "gluten-free"],
+    "estimatedCost": 9,
+    "mealType": "lunch",
+    "description": "A fresh, protein-packed salad with chickpeas, vegetables, and zesty dressing."
+  },
+  {
+    "id": "r8",
+    "name": "Salmon and Quinoa Bowl",
+    "tags": ["healthy", "protein", "lunch"],
+    "ingredients": [
+      {"name": "salmon", "category": "protein"},
+      {"name": "quinoa", "category": "grains"},
+      {"name": "spinach", "category": "vegetables"},
+      {"name": "avocado", "category": "vegetables"},
+      {"name": "lemon", "category": "fruits"},
+      {"name": "olive oil", "category": "oils"}
+    ],
+    "dietary": ["high-protein"],
+    "estimatedCost": 16,
+    "mealType": "lunch",
+    "description": "A nutrient-dense bowl with roasted salmon, quinoa, and fresh greens."
+  },
+  {
+    "id": "r9",
+    "name": "Sweet Potato and Black Bean Chili",
+    "tags": ["vegan", "dinner", "comfort"],
+    "ingredients": [
+      {"name": "sweet potato", "category": "carbs"},
+      {"name": "black beans", "category": "legumes"},
+      {"name": "tomato", "category": "vegetables"},
+      {"name": "onion", "category": "vegetables"},
+      {"name": "garlic", "category": "spices"},
+      {"name": "cumin", "category": "spices"},
+      {"name": "chili powder", "category": "spices"}
+    ],
+    "dietary": ["vegan"],
+    "estimatedCost": 11,
+    "mealType": "dinner",
+    "description": "A hearty chili with sweet potatoes, beans, and warming spices."
+  },
+  {
+    "id": "r10",
+    "name": "Greek Yogurt Parfait",
+    "tags": ["breakfast", "protein", "quick"],
+    "ingredients": [
+      {"name": "greek yogurt", "category": "dairy"},
+      {"name": "granola", "category": "carbs"},
+      {"name": "berries", "category": "fruits"},
+      {"name": "honey", "category": "condiments"},
+      {"name": "chia seeds", "category": "seeds"}
+    ],
+    "dietary": ["vegetarian"],
+    "estimatedCost": 6,
+    "mealType": "breakfast",
+    "description": "A layered parfait with creamy yogurt, crunchy granola, and fresh fruit."
+  },
+  {
+    "id": "r11",
+    "name": "Spinach and Feta Omelette",
+    "tags": ["breakfast", "vegetarian", "protein"],
+    "ingredients": [
+      {"name": "egg", "category": "protein"},
+      {"name": "spinach", "category": "vegetables"},
+      {"name": "feta cheese", "category": "dairy"},
+      {"name": "tomato", "category": "vegetables"},
+      {"name": "olive oil", "category": "oils"}
+    ],
+    "dietary": ["vegetarian"],
+    "estimatedCost": 7,
+    "mealType": "breakfast",
+    "description": "A savory omelette filled with spinach, tomatoes, and crumbled feta."
+  },
+  {
+    "id": "r12",
+    "name": "Turkey and Avocado Wrap",
+    "tags": ["lunch", "quick", "protein"],
+    "ingredients": [
+      {"name": "tortilla", "category": "carbs"},
+      {"name": "turkey", "category": "protein"},
+      {"name": "avocado", "category": "vegetables"},
+      {"name": "lettuce", "category": "vegetables"},
+      {"name": "tomato", "category": "vegetables"},
+      {"name": "mustard", "category": "condiments"}
+    ],
+    "dietary": ["high-protein"],
+    "estimatedCost": 10,
+    "mealType": "lunch",
+    "description": "A quick and satisfying wrap with sliced turkey, avocado, and crisp veggies."
+  },
+  {
+    "id": "r13",
+    "name": "Mushroom Risotto",
+    "tags": ["vegetarian", "italian", "dinner"],
+    "ingredients": [
+      {"name": "arborio rice", "category": "carbs"},
+      {"name": "mushrooms", "category": "vegetables"},
+      {"name": "parmesan", "category": "dairy"},
+      {"name": "onion", "category": "vegetables"},
+      {"name": "garlic", "category": "spices"},
+      {"name": "vegetable broth", "category": "condiments"},
+      {"name": "white wine", "category": "condiments"}
+    ],
+    "dietary": ["vegetarian"],
+    "estimatedCost": 13,
+    "mealType": "dinner",
+    "description": "A creamy risotto with savory mushrooms and melted parmesan."
+  },
+  {
+    "id": "r14",
+    "name": "Avocado Toast with Poached Egg",
+    "tags": ["breakfast", "vegetarian", "quick"],
+    "ingredients": [
+      {"name": "bread", "category": "carbs"},
+      {"name": "avocado", "category": "vegetables"},
+      {"name": "egg", "category": "protein"},
+      {"name": "lemon", "category": "fruits"},
+      {"name": "chili flakes", "category": "spices"},
+      {"name": "salt", "category": "spices"}
+    ],
+    "dietary": ["vegetarian"],
+    "estimatedCost": 8,
+    "mealType": "breakfast",
+    "description": "A classic toast topped with mashed avocado, a poached egg, and seasoning."
+  },
+  {
+    "id": "r15",
+    "name": "Lentil and Vegetable Soup",
+    "tags": ["vegan", "gluten-free", "comfort"],
+    "ingredients": [
+      {"name": "lentils", "category": "legumes"},
+      {"name": "carrot", "category": "vegetables"},
+      {"name": "celery", "category": "vegetables"},
+      {"name": "onion", "category": "vegetables"},
+      {"name": "tomato", "category": "vegetables"},
+      {"name": "spinach", "category": "vegetables"},
+      {"name": "vegetable broth", "category": "condiments"},
+      {"name": "thyme", "category": "herbs"}
+    ],
+    "dietary": ["vegan", "gluten-free"],
+    "estimatedCost": 9,
+    "mealType": "dinner",
+    "description": "A warm and hearty soup packed with lentils, vegetables, and herbs."
+  },
+  {
+    "id": "r16",
+    "name": "Berry Chia Pudding",
+    "tags": ["breakfast", "vegan", "healthy"],
+    "ingredients": [
+      {"name": "chia seeds", "category": "seeds"},
+      {"name": "almond milk", "category": "dairy"},
+      {"name": "berries", "category": "fruits"},
+      {"name": "vanilla extract", "category": "spices"},
+      {"name": "maple syrup", "category": "condiments"}
+    ],
+    "dietary": ["vegan", "gluten-free"],
+    "estimatedCost": 6,
+    "mealType": "breakfast",
+    "description": "A creamy chia pudding topped with fresh berries and sweet vanilla flavor."
+  },
+  {
+    "id": "r17",
+    "name": "Grilled Chicken Caesar Salad",
+    "tags": ["lunch", "protein", "salad"],
+    "ingredients": [
+      {"name": "chicken breast", "category": "protein"},
+      {"name": "romaine lettuce", "category": "vegetables"},
+      {"name": "parmesan", "category": "dairy"},
+      {"name": "croutons", "category": "carbs"},
+      {"name": "caesar dressing", "category": "condiments"}
+    ],
+    "dietary": ["high-protein"],
+    "estimatedCost": 13,
+    "mealType": "lunch",
+    "description": "A classic Caesar salad topped with grilled chicken and parmesan."
+  },
+  {
+    "id": "r18",
+    "name": "Beef and Mushroom Tacos",
+    "tags": ["mexican", "lunch", "protein"],
+    "ingredients": [
+      {"name": "ground beef", "category": "protein"},
+      {"name": "mushrooms", "category": "vegetables"},
+      {"name": "tortillas", "category": "carbs"},
+      {"name": "onion", "category": "vegetables"},
+      {"name": "cheddar", "category": "dairy"},
+      {"name": "cilantro", "category": "herbs"},
+      {"name": "sour cream", "category": "dairy"}
+    ],
+    "dietary": [],
+    "estimatedCost": 14,
+    "mealType": "lunch",
+    "description": "Savory beef and mushroom tacos with fresh toppings and melted cheese."
+  },
+  {
+    "id": "r19",
+    "name": "Roasted Vegetable Buddha Bowl",
+    "tags": ["vegan", "healthy", "lunch"],
+    "ingredients": [
+      {"name": "sweet potato", "category": "carbs"},
+      {"name": "broccoli", "category": "vegetables"},
+      {"name": "chickpeas", "category": "legumes"},
+      {"name": "brown rice", "category": "carbs"},
+      {"name": "avocado", "category": "vegetables"},
+      {"name": "tahini", "category": "condiments"}
+    ],
+    "dietary": ["vegan"],
+    "estimatedCost": 12,
+    "mealType": "lunch",
+    "description": "A colorful bowl of roasted vegetables, grains, and creamy tahini dressing."
+  },
+  {
+    "id": "r20",
+    "name": "Shrimp Fried Rice",
+    "tags": ["asian", "dinner", "quick"],
+    "ingredients": [
+      {"name": "shrimp", "category": "protein"},
+      {"name": "rice", "category": "carbs"},
+      {"name": "peas", "category": "vegetables"},
+      {"name": "carrot", "category": "vegetables"},
+      {"name": "soy sauce", "category": "condiments"},
+      {"name": "egg", "category": "protein"},
+      {"name": "green onion", "category": "vegetables"}
+    ],
+    "dietary": [],
+    "estimatedCost": 14,
+    "mealType": "dinner",
+    "description": "A quick and satisfying fried rice with shrimp, vegetables, and savory sauce."
+  },
+  {
+    "id": "r21",
+    "name": "Herb Grilled Chicken with Roasted Vegetables",
+    "tags": ["lactose-free", "gluten-free", "dinner", "protein"],
+    "ingredients": [
+      {"name": "chicken breast", "category": "protein"},
+      {"name": "zucchini", "category": "vegetables"},
+      {"name": "bell pepper", "category": "vegetables"},
+      {"name": "olive oil", "category": "oils"},
+      {"name": "rosemary", "category": "herbs"},
+      {"name": "garlic", "category": "spices"},
+      {"name": "lemon", "category": "fruits"}
+    ],
+    "dietary": ["lactose-free", "gluten-free"],
+    "estimatedCost": 15,
+    "mealType": "dinner",
+    "description": "Juicy grilled chicken with herb-roasted vegetables and a bright lemon finish."
+  },
+  {
+    "id": "r22",
+    "name": "Turmeric Coconut Lentil Soup",
+    "tags": ["lactose-free", "vegan", "gluten-free", "comfort"],
+    "ingredients": [
+      {"name": "red lentils", "category": "legumes"},
+      {"name": "coconut milk", "category": "dairy"},
+      {"name": "turmeric", "category": "spices"},
+      {"name": "ginger", "category": "spices"},
+      {"name": "onion", "category": "vegetables"},
+      {"name": "garlic", "category": "spices"},
+      {"name": "spinach", "category": "vegetables"}
+    ],
+    "dietary": ["lactose-free", "vegan", "gluten-free"],
+    "estimatedCost": 10,
+    "mealType": "dinner",
+    "description": "A creamy coconut and lentil soup with warming spices, made without dairy."
+  },
+  {
+    "id": "r23",
+    "name": "Southwest Turkey Bowl",
+    "tags": ["lactose-free", "protein", "quick", "lunch"],
+    "ingredients": [
+      {"name": "ground turkey", "category": "protein"},
+      {"name": "black beans", "category": "legumes"},
+      {"name": "corn", "category": "vegetables"},
+      {"name": "rice", "category": "carbs"},
+      {"name": "avocado", "category": "vegetables"},
+      {"name": "cilantro", "category": "herbs"},
+      {"name": "lime", "category": "fruits"}
+    ],
+    "dietary": ["lactose-free"],
+    "estimatedCost": 12,
+    "mealType": "lunch",
+    "description": "A hearty turkey bowl with beans, corn, avocado, and zesty lime dressing."
+  },
+  {
+    "id": "r24",
+    "name": "Chicken Pad Thai",
+    "tags": ["thai", "noodles", "dinner"],
+    "ingredients": [
+      {"name": "rice noodles", "category": "carbs"},
+      {"name": "chicken", "category": "protein"},
+      {"name": "bean sprouts", "category": "vegetables"},
+      {"name": "green onion", "category": "vegetables"},
+      {"name": "peanuts", "category": "nuts & seeds"},
+      {"name": "tamarind paste", "category": "condiments"},
+      {"name": "fish sauce", "category": "condiments"},
+      {"name": "lime", "category": "fruits"}
+    ],
+    "dietary": ["gluten-free"],
+    "estimatedCost": 14,
+    "mealType": "dinner",
+    "description": "A classic Thai noodle stir-fry with chicken, peanuts, and tangy tamarind sauce."
+  },
+  {
+    "id": "r25",
+    "name": "Italian Margherita Pizza",
+    "tags": ["italian", "vegetarian", "dinner"],
+    "ingredients": [
+      {"name": "pizza dough", "category": "carbs"},
+      {"name": "tomato sauce", "category": "condiments"},
+      {"name": "mozzarella", "category": "dairy"},
+      {"name": "basil", "category": "herbs"},
+      {"name": "olive oil", "category": "oils"},
+      {"name": "garlic", "category": "spices"}
+    ],
+    "dietary": ["vegetarian"],
+    "estimatedCost": 13,
+    "mealType": "dinner",
+    "description": "A traditional Italian pizza topped with fresh mozzarella, tomato sauce, and basil."
+  },
+  {
+    "id": "r26",
+    "name": "Chinese Vegetable Lo Mein",
+    "tags": ["chinese", "vegetarian", "lunch"],
+    "ingredients": [
+      {"name": "lo mein noodles", "category": "carbs"},
+      {"name": "cabbage", "category": "vegetables"},
+      {"name": "carrot", "category": "vegetables"},
+      {"name": "bok choy", "category": "vegetables"},
+      {"name": "soy sauce", "category": "condiments"},
+      {"name": "sesame oil", "category": "oils"},
+      {"name": "ginger", "category": "spices"}
+    ],
+    "dietary": ["vegetarian"],
+    "estimatedCost": 11,
+    "mealType": "lunch",
+    "description": "A savory Chinese-style noodle dish with vegetables and a soy-ginger sauce."
+  },
+  {
+    "id": "r27",
+    "name": "Spanish Breakfast Tortilla",
+    "tags": ["breakfast", "spanish", "vegetarian"],
+    "ingredients": [
+      {"name": "potatoes", "category": "vegetables"},
+      {"name": "egg", "category": "protein"},
+      {"name": "onion", "category": "vegetables"},
+      {"name": "olive oil", "category": "oils"},
+      {"name": "salt", "category": "spices"},
+      {"name": "pepper", "category": "spices"}
+    ],
+    "dietary": ["vegetarian"],
+    "estimatedCost": 7,
+    "mealType": "breakfast",
+    "description": "A warm Spanish-style omelette with potatoes and caramelized onion."
+  },
+  {
+    "id": "r28",
+    "name": "Mexican Huevos Rancheros",
+    "tags": ["breakfast", "mexican", "protein"],
+    "ingredients": [
+      {"name": "corn tortillas", "category": "carbs"},
+      {"name": "egg", "category": "protein"},
+      {"name": "black beans", "category": "legumes"},
+      {"name": "tomato salsa", "category": "condiments"},
+      {"name": "avocado", "category": "vegetables"},
+      {"name": "cilantro", "category": "herbs"}
+    ],
+    "dietary": ["gluten-free"],
+    "estimatedCost": 9,
+    "mealType": "breakfast",
+    "description": "A hearty Mexican breakfast with eggs, beans, salsa, and avocado on tortillas."
+  },
+  {
+    "id": "r29",
+    "name": "Japanese Miso Soup with Rice",
+    "tags": ["breakfast", "japanese", "light"],
+    "ingredients": [
+      {"name": "miso paste", "category": "condiments"},
+      {"name": "tofu", "category": "protein"},
+      {"name": "green onion", "category": "vegetables"},
+      {"name": "wakame", "category": "vegetables"},
+      {"name": "rice", "category": "carbs"}
+    ],
+    "dietary": ["vegetarian"],
+    "estimatedCost": 8,
+    "mealType": "breakfast",
+    "description": "A comforting Japanese breakfast with miso soup, tofu, and steamed rice."
+  },
+  {
+    "id": "r30",
+    "name": "Vegan Sweet Potato Buddha Bowl",
+    "tags": ["vegan", "gluten-free", "lunch"],
+    "ingredients": [
+      {"name": "sweet potato", "category": "carbs"},
+      {"name": "quinoa", "category": "grains"},
+      {"name": "spinach", "category": "vegetables"},
+      {"name": "avocado", "category": "vegetables"},
+      {"name": "pumpkin seeds", "category": "nuts & seeds"},
+      {"name": "tahini", "category": "condiments"}
+    ],
+    "dietary": ["vegan", "gluten-free"],
+    "estimatedCost": 12,
+    "mealType": "lunch",
+    "description": "A nourishing vegan bowl with roasted sweet potato, quinoa, greens, and tahini dressing."
+  },
+  {
+    "id": "r31",
+    "name": "Chickpea Curry with Cauliflower Rice",
+    "tags": ["vegan", "dinner", "indian", "gluten-free"],
+    "ingredients": [
+      {"name": "chickpeas", "category": "legumes"},
+      {"name": "cauliflower", "category": "vegetables"},
+      {"name": "coconut milk", "category": "dairy"},
+      {"name": "garam masala", "category": "spices"},
+      {"name": "tomato", "category": "vegetables"},
+      {"name": "ginger", "category": "spices"}
+    ],
+    "dietary": ["vegan", "gluten-free"],
+    "estimatedCost": 11,
+    "mealType": "dinner",
+    "description": "A fragrant chickpea curry served with light cauliflower rice for a plant-based dinner."
+  },
+  {
+    "id": "r32",
+    "name": "Mushroom and Spinach Flatbread",
+    "tags": ["vegetarian", "lunch", "italian"],
+    "ingredients": [
+      {"name": "flatbread", "category": "carbs"},
+      {"name": "mushrooms", "category": "vegetables"},
+      {"name": "spinach", "category": "vegetables"},
+      {"name": "feta", "category": "dairy"},
+      {"name": "olive oil", "category": "oils"},
+      {"name": "oregano", "category": "spices"}
+    ],
+    "dietary": ["vegetarian"],
+    "estimatedCost": 10,
+    "mealType": "lunch",
+    "description": "A savory flatbread topped with sautéed mushrooms, spinach, and feta cheese."
+  },
+  {
+    "id": "r33",
+    "name": "Vegan Lentil Tacos",
+    "tags": ["vegan", "tacos", "dinner"],
+    "ingredients": [
+      {"name": "lentils", "category": "legumes"},
+      {"name": "corn tortillas", "category": "carbs"},
+      {"name": "lettuce", "category": "vegetables"},
+      {"name": "tomato", "category": "vegetables"},
+      {"name": "avocado", "category": "vegetables"},
+      {"name": "taco seasoning", "category": "spices"}
+    ],
+    "dietary": ["vegan"],
+    "estimatedCost": 9,
+    "mealType": "dinner",
+    "description": "Flavorful vegan tacos made with spiced lentils and fresh toppings."
+  },
+  {
+    "id": "r34",
+    "name": "Berry Almond Oat Smoothie",
+    "tags": ["vegan", "breakfast", "quick"],
+    "ingredients": [
+      {"name": "frozen berries", "category": "fruits"},
+      {"name": "oats", "category": "grains"},
+      {"name": "almond milk", "category": "dairy"},
+      {"name": "almond butter", "category": "nuts & seeds"},
+      {"name": "maple syrup", "category": "condiments"}
+    ],
+    "dietary": ["vegan"],
+    "estimatedCost": 7,
+    "mealType": "breakfast",
+    "description": "A creamy vegan smoothie with berries, oats, and almond butter for a quick breakfast."
+  },
+  {
+    "id": "r35",
+    "name": "Roasted Cauliflower Taco Salad",
+    "tags": ["vegetarian", "gluten-free", "lunch"],
+    "ingredients": [
+      {"name": "cauliflower", "category": "vegetables"},
+      {"name": "black beans", "category": "legumes"},
+      {"name": "romaine lettuce", "category": "vegetables"},
+      {"name": "avocado", "category": "vegetables"},
+      {"name": "lime", "category": "fruits"},
+      {"name": "cumin", "category": "spices"}
+    ],
+    "dietary": ["vegetarian", "gluten-free"],
+    "estimatedCost": 10,
+    "mealType": "lunch",
+    "description": "A crunchy taco-style salad topped with roasted cauliflower, beans, and lime dressing."
+  },
+  {
+    "id": "r36",
+    "name": "Grilled Salmon with Lemon Herb Quinoa",
+    "tags": ["fish", "dinner", "gluten-free", "healthy"],
+    "ingredients": [
+      {"name": "salmon fillet", "category": "protein"},
+      {"name": "quinoa", "category": "grains"},
+      {"name": "lemon", "category": "fruits"},
+      {"name": "parsley", "category": "herbs"},
+      {"name": "olive oil", "category": "oils"},
+      {"name": "garlic", "category": "spices"}
+    ],
+    "dietary": ["gluten-free"],
+    "estimatedCost": 16,
+    "mealType": "dinner",
+    "description": "Grilled salmon served over lemony quinoa with fresh herbs and garlic."
+  },
+  {
+    "id": "r37",
+    "name": "Beef Stir Fry with Broccoli",
+    "tags": ["dinner", "asian", "protein"],
+    "ingredients": [
+      {"name": "beef strips", "category": "protein"},
+      {"name": "broccoli", "category": "vegetables"},
+      {"name": "soy sauce", "category": "condiments"},
+      {"name": "ginger", "category": "spices"},
+      {"name": "sesame oil", "category": "oils"},
+      {"name": "rice", "category": "carbs"}
+    ],
+    "dietary": [],
+    "estimatedCost": 15,
+    "mealType": "dinner",
+    "description": "A savory beef stir fry with tender broccoli in a ginger-soy sauce, served with rice."
+  },
+  {
+    "id": "r38",
+    "name": "Chicken Pesto Pasta",
+    "tags": ["italian", "lunch", "protein"],
+    "ingredients": [
+      {"name": "chicken breast", "category": "protein"},
+      {"name": "pasta", "category": "carbs"},
+      {"name": "basil pesto", "category": "condiments"},
+      {"name": "parmesan", "category": "dairy"},
+      {"name": "cherry tomatoes", "category": "vegetables"},
+      {"name": "olive oil", "category": "oils"}
+    ],
+    "dietary": [],
+    "estimatedCost": 13,
+    "mealType": "lunch",
+    "description": "A comforting pasta dish with grilled chicken, pesto, and fresh tomatoes."
+  },
+  {
+    "id": "r39",
+    "name": "Shrimp and Avocado Salad",
+    "tags": ["fish", "lunch", "healthy"],
+    "ingredients": [
+      {"name": "shrimp", "category": "protein"},
+      {"name": "avocado", "category": "vegetables"},
+      {"name": "mixed greens", "category": "vegetables"},
+      {"name": "lime", "category": "fruits"},
+      {"name": "olive oil", "category": "oils"},
+      {"name": "cilantro", "category": "herbs"}
+    ],
+    "dietary": ["gluten-free"],
+    "estimatedCost": 14,
+    "mealType": "lunch",
+    "description": "A bright salad with tender shrimp, creamy avocado, and zesty lime dressing."
+  },
+  {
+    "id": "r40",
+    "name": "Pork Tenderloin with Apple Chutney",
+    "tags": ["dinner", "comfort", "protein"],
+    "ingredients": [
+      {"name": "pork tenderloin", "category": "protein"},
+      {"name": "apple", "category": "fruits"},
+      {"name": "onion", "category": "vegetables"},
+      {"name": "cinnamon", "category": "spices"},
+      {"name": "apple cider vinegar", "category": "condiments"},
+      {"name": "olive oil", "category": "oils"}
+    ],
+    "dietary": [],
+    "estimatedCost": 15,
+    "mealType": "dinner",
+    "description": "Roasted pork tenderloin topped with a sweet and tangy apple chutney."
+  }
+]
