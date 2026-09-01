@@ -10,6 +10,12 @@ The application takes user input such as dietary preferences, restrictions, budg
 - A simple calendar-style visualization of the plan
 - An AI agent workflow powered by OpenRouter
 
+## Demo
+
+[![Smart Meal Planner Demo](https://img.youtube.com/vi/jMxRWQm0FFY/maxresdefault.jpg)](https://youtu.be/jMxRWQm0FFY)
+
+The demo provides a short walkthrough of the application, showing the user interface, meal plan generation, and the AI agent workflow.
+
 ---
 
 ## Author
